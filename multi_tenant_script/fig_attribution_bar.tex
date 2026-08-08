@@ -1,0 +1,38 @@
+% fig_attribution_bar.tex
+% Grouped bar chart: attribution match rate under three calibration conditions.
+% Requires in the main document preamble:
+%   \usepackage{pgfplots}
+%   \pgfplotsset{compat=1.16}   % or newer
+%
+% Suggested caption for the surrounding figure environment:
+% \caption{Attribution match rate under three calibration conditions. Simultaneous
+% co-firing reproduces the live-capture batch timing and recovers near-full
+% attribution for all tenants.}
+\begin{tikzpicture}
+\begin{axis}[
+  font=\sffamily,
+  ybar,
+  bar width=13pt,
+  width=10cm, height=6.5cm,
+  ymin=0, ymax=112,
+  ytick={0,20,40,60,80,100},
+  ylabel={Attribution match rate (\%)},
+  ylabel style={font=\sffamily\small},
+  symbolic x coords={g0,g1},
+  xtick={g0,g1},
+  xticklabels={Short prompt (T0), Longer prompts (T1--T4)},
+  x tick label style={font=\sffamily\small, align=center},
+  tick label style={font=\sffamily\small},
+  enlarge x limits=0.6,
+  nodes near coords,
+  every node near coord/.append style={font=\sffamily\scriptsize, anchor=south},
+  legend style={font=\sffamily\footnotesize, at={(0.5,1.02)}, anchor=south,
+                legend columns=3, draw=none, column sep=5pt},
+  ymajorgrids, grid style={gray!25, thin},
+]
+\addplot[draw=black, fill=gray!55] coordinates {(g0,97) (g1,10)};
+\addplot[draw=black, fill=gray!18] coordinates {(g0,97) (g1,9.8)};
+\addplot[draw=black, fill=gray!90] coordinates {(g0,97) (g1,97.5)};
+\legend{Solo calibration, Head-start batched, Simultaneous batched}
+\end{axis}
+\end{tikzpicture}

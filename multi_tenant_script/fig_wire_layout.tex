@@ -1,0 +1,63 @@
+% fig_wire_layout.tex
+% GPU tensor memory (token-major) vs on-the-wire transfer (head-major).
+% One block = 16 tokens x 8 heads; each cell = 256 bytes (one head's worth).
+% Requires in the main document preamble:
+%   \usepackage{tikz}
+%   \usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[
+  font=\sffamily\footnotesize,
+  >={Stealth[length=2.4mm]},
+]
+\def\s{0.34}   % cell size (cm)
+
+% =============== LEFT: token-major GPU memory (16 tokens x 8 heads) ===============
+\begin{scope}[shift={(0,0)}]
+  \node[font=\sffamily\small, align=center] at ({4*\s},{16*\s+0.62})
+        {GPU tensor memory\\(token-major)};
+  \draw[very thin] (0,0) rectangle ({8*\s},{16*\s});
+  \foreach \i in {1,...,7}{ \draw[very thin] ({\i*\s},0) -- ({\i*\s},{16*\s}); }
+  \foreach \j in {1,...,15}{ \draw[very thin] (0,{\j*\s}) -- ({8*\s},{\j*\s}); }
+  % highlighted matching unit: token 0 (top row), head 0 (left col)
+  \fill[gray!25] (0,{15*\s}) rectangle ({1*\s},{16*\s});
+  \draw[line width=1.3pt] (0,{15*\s}) rectangle ({1*\s},{16*\s});
+  % axis labels
+  \node[anchor=north, font=\sffamily\scriptsize] at ({4*\s},-0.10) {heads $h_0 \ldots h_7$};
+  \node[rotate=90, anchor=south, font=\sffamily\scriptsize] at (-0.30,{8*\s})
+        {tokens $t_0 \ldots t_{15}$};
+  % callout for the highlighted cell
+  \node[anchor=west, font=\sffamily\scriptsize, align=left] at ({8*\s+0.15},{15.5*\s})
+        {256-B matching\\unit ($t_0,h_0$)};
+  \draw[->] ({8*\s+0.12},{15.5*\s}) -- ({1*\s+0.02},{15.5*\s});
+\end{scope}
+
+% =============== middle arrow ===============
+\node[align=center, font=\sffamily\scriptsize] at (3.75,{8*\s+0.32}) {transmit};
+\draw[-{Stealth[length=3mm]}, line width=1pt] (3.0,{8*\s}) -- (4.5,{8*\s});
+
+% =============== RIGHT: head-major wire (8 heads x 16 tokens, framing gaps) ===============
+\begin{scope}[shift={(5.9,0)}]
+  \def\g{0.18}  % framing gap between head groups
+  % total height of 8 rows + 7 gaps
+  \pgfmathsetmacro{\H}{8*\s+7*\g}
+  \node[font=\sffamily\small, align=center] at ({8*\s},{\H+0.62})
+        {Wire transfer\\(head-major)};
+  \foreach \h in {0,...,7}{
+     \pgfmathsetmacro{\yb}{(7-\h)*(\s+\g)}   % bottom y of head \h row (head 0 on top)
+     \draw[very thin] (0,\yb) rectangle ({16*\s},{\yb+\s});
+     \foreach \k in {1,...,15}{ \draw[very thin] ({\k*\s},\yb) -- ({\k*\s},{\yb+\s}); }
+     \node[anchor=east, font=\sffamily\scriptsize] at (-0.08,{\yb+0.5*\s}) {head $\h$};
+  }
+  % highlighted matching unit: head 0 (top row), token 0 (left)
+  \pgfmathsetmacro{\yt}{7*(\s+\g)}
+  \fill[gray!25] (0,\yt) rectangle ({1*\s},{\yt+\s});
+  \draw[line width=1.3pt] (0,\yt) rectangle ({1*\s},{\yt+\s});
+  % token label across the top head row
+  \node[anchor=south, font=\sffamily\scriptsize] at ({8*\s},{\yt+\s+0.03})
+        {16 tokens $t_0 \ldots t_{15}$ of one head, contiguous};
+  % framing-gap annotation (point at the gap between head 3 and head 4)
+  \pgfmathsetmacro{\yg}{3.5*(\s+\g)+0.0}
+  \node[anchor=west, font=\sffamily\scriptsize, align=left] at ({16*\s+0.2},{\yg})
+        {framing gaps\\between\\head groups};
+  \draw[->] ({16*\s+0.17},{\yg}) -- ({16*\s+0.02},{4*(\s+\g)-0.5*\g});
+\end{scope}
+\end{tikzpicture}

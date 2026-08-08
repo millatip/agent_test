@@ -1,0 +1,139 @@
+{
+  "arm": "flat",
+  "timestamp_utc": "2026-08-05T12:48:33.524191+00:00",
+  "endpoint": "http://localhost:8000/v1",
+  "model": "/home/s3lab-spark/LG2026/models/Qwen3-8B-unsloth-bnb-4bit",
+  "vllm_version": "0.25.1",
+  "nixl_version": null,
+  "worker_pids_found": [
+    2093561
+  ],
+  "ucx_env_by_pid": {
+    "2093561": {}
+  },
+  "worker_log": {
+    "log_path": null,
+    "gpu_memory_utilization_arg": null,
+    "gpu_kv_cache_size_tokens": null
+  },
+  "nvidia_smi_start": [
+    {
+      "pid": "1315758",
+      "process_name": "python3",
+      "used_gpu_memory [MiB]": "218 MiB"
+    },
+    {
+      "pid": "1316081",
+      "process_name": "sglang::scheduler",
+      "used_gpu_memory [MiB]": "17567 MiB"
+    },
+    {
+      "pid": "519795",
+      "process_name": "python3",
+      "used_gpu_memory [MiB]": "218 MiB"
+    },
+    {
+      "pid": "520174",
+      "process_name": "sglang::scheduler",
+      "used_gpu_memory [MiB]": "9945 MiB"
+    },
+    {
+      "pid": "2093744",
+      "process_name": "VLLM::EngineCore",
+      "used_gpu_memory [MiB]": "51242 MiB"
+    }
+  ],
+  "nvidia_smi_end": [
+    {
+      "pid": "1315758",
+      "process_name": "python3",
+      "used_gpu_memory [MiB]": "218 MiB"
+    },
+    {
+      "pid": "1316081",
+      "process_name": "sglang::scheduler",
+      "used_gpu_memory [MiB]": "17567 MiB"
+    },
+    {
+      "pid": "519795",
+      "process_name": "python3",
+      "used_gpu_memory [MiB]": "218 MiB"
+    },
+    {
+      "pid": "520174",
+      "process_name": "sglang::scheduler",
+      "used_gpu_memory [MiB]": "9945 MiB"
+    },
+    {
+      "pid": "2093744",
+      "process_name": "VLLM::EngineCore",
+      "used_gpu_memory [MiB]": "51242 MiB"
+    }
+  ],
+  "config": {
+    "base_url": "http://localhost:8000/v1",
+    "model": "/home/s3lab-spark/LG2026/models/Qwen3-8B-unsloth-bnb-4bit",
+    "api_key": "EMPTY",
+    "arm": "flat",
+    "request_timeout": 60.0,
+    "warmup_requests": 5,
+    "e0_anchor_words": 150,
+    "e0_warm_probe_repeats": 5,
+    "e0_flood_fraction_sweep": [
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5
+    ],
+    "e0_flood_target_tokens_per_prompt": 2000,
+    "e0_max_flood_requests_per_point": 5000,
+    "e0_flood_progress_every": 25,
+    "e0_capacity_tokens": 297968,
+    "e1_n_hit": 10,
+    "e1_n_miss": 10,
+    "e1_hit_target_tokens": 2000,
+    "e1_miss_target_tokens": 2000,
+    "e1_length_sweep_tokens": [
+      500,
+      1000,
+      2000,
+      4000
+    ],
+    "e1_length_sweep_repeats": 3,
+    "words_per_token_estimate": 0.75,
+    "e2_n_hit": 15,
+    "e2_n_miss": 15,
+    "e2_target_tokens": 2000,
+    "e3_n_templates": 20,
+    "e3_template_min_words": 20,
+    "e3_template_max_words": 1500,
+    "e3_n_live_observations": 20,
+    "e4_jitter_ms": [
+      0,
+      10,
+      25,
+      50,
+      100,
+      200
+    ],
+    "e4_threshold_shift": [
+      -0.15,
+      0.0,
+      0.15
+    ],
+    "e4_rate_limit_delay_s": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "e4_jitter_trials": 200,
+    "e5_n_turns": 10,
+    "e5_victim_max_tokens": 100,
+    "e5_victim_chk_account": "CHK-9001",
+    "e5_victim_sav_account": "SAV-9002",
+    "output_root": "results",
+    "worker_log_glob": "/tmp/*with_hook*.log"
+  }
+}

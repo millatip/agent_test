@@ -1,0 +1,102 @@
+{
+  "anchor_confirm": {
+    "cold": {
+      "ttft": 278.845,
+      "prompt_tokens": 194,
+      "ok": true
+    },
+    "warm_probes": [
+      {
+        "ttft": 186.353,
+        "prompt_tokens": 194,
+        "ok": true
+      },
+      {
+        "ttft": 185.402,
+        "prompt_tokens": 194,
+        "ok": true
+      },
+      {
+        "ttft": 188.033,
+        "prompt_tokens": 194,
+        "ok": true
+      },
+      {
+        "ttft": 184.51,
+        "prompt_tokens": 194,
+        "ok": true
+      },
+      {
+        "ttft": 185.527,
+        "prompt_tokens": 194,
+        "ok": true
+      }
+    ],
+    "warm_mean_ttft": 185.965,
+    "speedup": 1.4994488210147072,
+    "jump_midpoint_ttft": 232.40500000000003
+  },
+  "sweep": [
+    {
+      "n": 10,
+      "rewarm_ttft": 184.877,
+      "rewarm_ok": true,
+      "post_flood_ttft": 186.705,
+      "post_flood_ok": true,
+      "flood_requests_ok": 10,
+      "flood_requests_total": 10,
+      "flood_tokens_total": 2001
+    },
+    {
+      "n": 50,
+      "rewarm_ttft": 183.548,
+      "rewarm_ok": true,
+      "post_flood_ttft": 182.184,
+      "post_flood_ok": true,
+      "flood_requests_ok": 50,
+      "flood_requests_total": 50,
+      "flood_tokens_total": 9978
+    },
+    {
+      "n": 100,
+      "rewarm_ttft": 183.8,
+      "rewarm_ok": true,
+      "post_flood_ttft": 185.113,
+      "post_flood_ok": true,
+      "flood_requests_ok": 100,
+      "flood_requests_total": 100,
+      "flood_tokens_total": 20077
+    },
+    {
+      "n": 150,
+      "rewarm_ttft": 186.632,
+      "rewarm_ok": true,
+      "post_flood_ttft": 185.345,
+      "post_flood_ok": true,
+      "flood_requests_ok": 150,
+      "flood_requests_total": 150,
+      "flood_tokens_total": 29982
+    },
+    {
+      "n": 200,
+      "rewarm_ttft": 185.355,
+      "rewarm_ok": true,
+      "post_flood_ttft": 191.274,
+      "post_flood_ok": true,
+      "flood_requests_ok": 200,
+      "flood_requests_total": 200,
+      "flood_tokens_total": 40123
+    },
+    {
+      "n": 300,
+      "rewarm_ttft": 185.796,
+      "rewarm_ok": true,
+      "post_flood_ttft": 187.034,
+      "post_flood_ok": true,
+      "flood_requests_ok": 300,
+      "flood_requests_total": 300,
+      "flood_tokens_total": 60018
+    }
+  ],
+  "jump_at_n": null
+}

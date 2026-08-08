@@ -1,0 +1,5 @@
+{"timestamp": "2026-07-23T07:38:36.827545+00:00", "kind": "victim_baseline", "batch": 0, "cumulative_filler_count": 0, "cumulative_filler_tokens": 0, "ttft_ms": 274.18, "prompt_tokens": 214, "elapsed_run_seconds": 0.31}
+{"timestamp": "2026-07-23T07:38:37.104275+00:00", "kind": "filler", "batch": 1, "cumulative_filler_count": 1, "cumulative_filler_tokens": 264, "ttft_ms": 275.95, "prompt_tokens": 264, "elapsed_run_seconds": 0.59}
+{"timestamp": "2026-07-23T07:38:37.381590+00:00", "kind": "filler", "batch": 1, "cumulative_filler_count": 2, "cumulative_filler_tokens": 526, "ttft_ms": 275.89, "prompt_tokens": 262, "elapsed_run_seconds": 0.87}
+{"timestamp": "2026-07-23T07:38:37.664059+00:00", "kind": "filler", "batch": 1, "cumulative_filler_count": 3, "cumulative_filler_tokens": 804, "ttft_ms": 281.2, "prompt_tokens": 278, "elapsed_run_seconds": 1.15}
+{"timestamp": "2026-07-23T07:38:37.851355+00:00", "kind": "victim_recheck", "batch": 1, "cumulative_filler_count": 3, "cumulative_filler_tokens": 804, "ttft_ms": 186.75, "prompt_tokens": 214, "elapsed_run_seconds": 1.34}

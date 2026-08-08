@@ -1,0 +1,2 @@
+{"timestamp": "2026-07-23T12:28:00.721277+00:00", "kind": "victim_baseline", "ttft_ms": 227.81, "prompt_tokens": 214, "created_epoch": 1784809680, "created_utc": "2026-07-23T12:28:00+00:00", "elapsed_run_seconds": 0.27}
+{"timestamp": "2026-07-23T12:33:17.004895+00:00", "kind": "victim_final", "ttft_ms": 190.53, "prompt_tokens": 214, "created_epoch": 1784809996, "created_utc": "2026-07-23T12:33:16+00:00", "elapsed_run_seconds": 316.55}

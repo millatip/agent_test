@@ -1,0 +1,52 @@
+% fig_attack_arch.tex
+% Two-panel attack architecture: Phase 1 (offline calibration) | Phase 2 (live attack).
+% Requires in the main document preamble:
+%   \usepackage{tikz}
+%   \usetikzlibrary{arrows.meta}
+\begin{tikzpicture}[
+  font=\sffamily\small,
+  >={Stealth[length=2mm,width=1.6mm]},
+  box/.style={draw=black, semithick, rectangle, align=center,
+              inner sep=3pt, text width=26mm, minimum height=9mm},
+  nbox/.style={draw=black, semithick, rectangle, align=center,
+              inner sep=3pt, text width=16mm, minimum height=9mm},
+  lbl/.style={font=\sffamily\footnotesize},
+]
+% =================== Phase 1 (left panel) ===================
+\node[font=\sffamily\bfseries] at (1.7,5.6) {Phase 1: Offline Calibration};
+\node[box] (victim) at (1.7,4.4) {Victim model};
+\node[box] (kvhook) at (1.7,2.9) {KVHOOK\\instrumentation};
+\node[box] (gt)     at (1.7,1.4) {Per-tenant\\ground truth};
+\draw[->] (victim) -- (kvhook);
+\draw[->] (kvhook) -- (gt);
+
+% =================== vertical dashed divider ===================
+\draw[dashed, gray] (3.95,0.6) -- (3.95,6.0);
+
+% =================== Phase 2 (right panel) ===================
+\node[font=\sffamily\bfseries] at (8.7,5.6) {Phase 2: Live Attack};
+\node[nbox] (prefill) at (6.9,4.2) {Prefill\\node};
+\node[nbox] (decode)  at (11.0,4.2) {Decode\\node};
+
+% 5 tenant arrows entering the prefill node
+\foreach \y/\i in {5.0/0, 4.6/1, 4.2/2, 3.8/3, 3.4/4}{
+  \draw[->] (5.2,\y) -- (prefill.west);
+  \node[lbl, anchor=east] at (5.15,\y) {$t_{\i}$};
+}
+\node[lbl, anchor=east, align=right] at (5.15,2.85) {5 concurrent\\tenants};
+
+% thick NixlConnector arrow prefill -> decode
+\draw[-{Stealth[length=3mm,width=2.6mm]}, line width=1.4pt] (prefill.east) -- (decode.west);
+\node[lbl, align=center] at (8.95,4.98) {NixlConnector / TCP};
+\node[lbl, align=center] at (8.95,4.64) {(plaintext, head-major)};
+
+% passive attacker tapping the connection
+\coordinate (tap) at (8.95,4.2);
+\fill (tap) circle (1.4pt);
+\node[nbox, text width=24mm] (att) at (8.95,2.7) {Passive attacker\\(wire tap)};
+\draw[dashed] (tap) -- (att.north);
+
+% attribution analysis box
+\node[box, text width=32mm] (attr) at (8.95,1.1) {Attribution analysis\\(256-B per-head matching)};
+\draw[->] (att) -- (attr);
+\end{tikzpicture}

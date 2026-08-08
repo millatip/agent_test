@@ -1,0 +1,116 @@
+{
+  "capacity_tokens_used": 289968,
+  "anchor_confirm": {
+    "cold": {
+      "ttft": 285.699,
+      "prompt_tokens": 203,
+      "ok": true
+    },
+    "warm_probes": [
+      {
+        "ttft": 191.965,
+        "prompt_tokens": 203,
+        "ok": true
+      },
+      {
+        "ttft": 190.886,
+        "prompt_tokens": 203,
+        "ok": true
+      },
+      {
+        "ttft": 188.461,
+        "prompt_tokens": 203,
+        "ok": true
+      },
+      {
+        "ttft": 182.072,
+        "prompt_tokens": 203,
+        "ok": true
+      },
+      {
+        "ttft": 183.72,
+        "prompt_tokens": 203,
+        "ok": true
+      }
+    ],
+    "warm_mean_ttft": 187.4208,
+    "speedup": 1.5243718946883162,
+    "jump_midpoint_ttft": 236.55990000000003
+  },
+  "sweep": [
+    {
+      "fraction_of_capacity": 0.25,
+      "target_flood_tokens": 72492,
+      "actual_flood_tokens": 72958,
+      "flood_request_count": 42,
+      "flood_requests_ok": 42,
+      "capped_before_target": false,
+      "rewarm_ttft": 189.598,
+      "rewarm_ok": true,
+      "post_flood_ttft": 188.952,
+      "post_flood_ok": true
+    },
+    {
+      "fraction_of_capacity": 0.5,
+      "target_flood_tokens": 144984,
+      "actual_flood_tokens": 145714,
+      "flood_request_count": 84,
+      "flood_requests_ok": 84,
+      "capped_before_target": false,
+      "rewarm_ttft": 186.088,
+      "rewarm_ok": true,
+      "post_flood_ttft": 192.017,
+      "post_flood_ok": true
+    },
+    {
+      "fraction_of_capacity": 0.75,
+      "target_flood_tokens": 217476,
+      "actual_flood_tokens": 218582,
+      "flood_request_count": 126,
+      "flood_requests_ok": 126,
+      "capped_before_target": false,
+      "rewarm_ttft": 191.283,
+      "rewarm_ok": true,
+      "post_flood_ttft": 188.891,
+      "post_flood_ok": true
+    },
+    {
+      "fraction_of_capacity": 1.0,
+      "target_flood_tokens": 289968,
+      "actual_flood_tokens": 291231,
+      "flood_request_count": 168,
+      "flood_requests_ok": 168,
+      "capped_before_target": false,
+      "rewarm_ttft": 186.349,
+      "rewarm_ok": true,
+      "post_flood_ttft": 253.203,
+      "post_flood_ok": true
+    },
+    {
+      "fraction_of_capacity": 1.25,
+      "target_flood_tokens": 362460,
+      "actual_flood_tokens": 364033,
+      "flood_request_count": 210,
+      "flood_requests_ok": 210,
+      "capped_before_target": false,
+      "rewarm_ttft": 187.031,
+      "rewarm_ok": true,
+      "post_flood_ttft": 282.763,
+      "post_flood_ok": true
+    },
+    {
+      "fraction_of_capacity": 1.5,
+      "target_flood_tokens": 434952,
+      "actual_flood_tokens": 435093,
+      "flood_request_count": 251,
+      "flood_requests_ok": 251,
+      "capped_before_target": false,
+      "rewarm_ttft": 186.846,
+      "rewarm_ok": true,
+      "post_flood_ttft": 282.74,
+      "post_flood_ok": true
+    }
+  ],
+  "jump_at_fraction": 1.0,
+  "jump_at_tokens": 291231
+}

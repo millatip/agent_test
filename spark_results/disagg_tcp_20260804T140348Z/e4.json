@@ -1,0 +1,95 @@
+{
+  "baseline_tau": 605.6381,
+  "n_reused_from_e2": 30,
+  "jitter_sweep": [
+    {
+      "jitter_ms": 0,
+      "mean_accuracy": 0.5,
+      "std_accuracy": 0.0,
+      "resamples": 200
+    },
+    {
+      "jitter_ms": 10,
+      "mean_accuracy": 0.5,
+      "std_accuracy": 0.0,
+      "resamples": 200
+    },
+    {
+      "jitter_ms": 25,
+      "mean_accuracy": 0.5,
+      "std_accuracy": 0.0,
+      "resamples": 200
+    },
+    {
+      "jitter_ms": 50,
+      "mean_accuracy": 0.5,
+      "std_accuracy": 0.0,
+      "resamples": 200
+    },
+    {
+      "jitter_ms": 100,
+      "mean_accuracy": 0.5001666666666666,
+      "std_accuracy": 0.002357022603955158,
+      "resamples": 200
+    },
+    {
+      "jitter_ms": 200,
+      "mean_accuracy": 0.5125,
+      "std_accuracy": 0.03160290680606714,
+      "resamples": 200
+    }
+  ],
+  "threshold_shift_sweep": [
+    {
+      "delta": -0.15,
+      "tau_eff": 514.792385,
+      "accuracy": 0.5
+    },
+    {
+      "delta": 0.0,
+      "tau_eff": 605.6381,
+      "accuracy": 0.5
+    },
+    {
+      "delta": 0.15,
+      "tau_eff": 696.4838149999999,
+      "accuracy": 0.5
+    }
+  ],
+  "rate_limit_delay_evaluated": true,
+  "rate_limit_delay_sweep": [
+    {
+      "delay_s": 0.0,
+      "accuracy": 0.5,
+      "n_scored": 30,
+      "confusion_matrix": {
+        "TP": 15,
+        "FP": 15,
+        "TN": 0,
+        "FN": 0
+      }
+    },
+    {
+      "delay_s": 0.5,
+      "accuracy": 0.5,
+      "n_scored": 30,
+      "confusion_matrix": {
+        "TP": 15,
+        "FP": 15,
+        "TN": 0,
+        "FN": 0
+      }
+    },
+    {
+      "delay_s": 1.0,
+      "accuracy": 0.5,
+      "n_scored": 30,
+      "confusion_matrix": {
+        "TP": 15,
+        "FP": 15,
+        "TN": 0,
+        "FN": 0
+      }
+    }
+  ]
+}

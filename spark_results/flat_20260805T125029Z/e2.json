@@ -1,0 +1,193 @@
+{
+  "tau_used": 321.23785,
+  "trials": [
+    {
+      "truth": "MISS",
+      "ttft": 499.026,
+      "prompt_tokens": 1734,
+      "ok": true
+    },
+    {
+      "truth": "MISS",
+      "ttft": 498.486,
+      "prompt_tokens": 1734,
+      "ok": true
+    },
+    {
+      "truth": "HIT",
+      "ttft": 141.679,
+      "prompt_tokens": 1759,
+      "ok": true
+    },
+    {
+      "truth": "HIT",
+      "ttft": 141.443,
+      "prompt_tokens": 1748,
+      "ok": true
+    },
+    {
+      "truth": "MISS",
+      "ttft": 502.874,
+      "prompt_tokens": 1734,
+      "ok": true
+    },
+    {
+      "truth": "MISS",
+      "ttft": 490.942,
+      "prompt_tokens": 1706,
+      "ok": true
+    },
+    {
+      "truth": "HIT",
+      "ttft": 141.167,
+      "prompt_tokens": 1718,
+      "ok": true
+    },
+    {
+      "truth": "MISS",
+      "ttft": 499.172,
+      "prompt_tokens": 1737,
+      "ok": true
+    },
+    {
+      "truth": "HIT",
+      "ttft": 142.207,
+      "prompt_tokens": 1762,
+      "ok": true
+    },
+    {
+      "truth": "MISS",
+      "ttft": 499.381,
+      "prompt_tokens": 1741,
+      "ok": true
+    },
+    {
+      "truth": "HIT",
+      "ttft": 141.392,
+      "prompt_tokens": 1725,
+      "ok": true
+    },
+    {
+      "truth": "HIT",
+      "ttft": 142.404,
+      "prompt_tokens": 1712,
+      "ok": true
+    },
+    {
+      "truth": "MISS",
+      "ttft": 515.781,
+      "prompt_tokens": 1762,
+      "ok": true
+    },
+    {
+      "truth": "MISS",
+      "ttft": 497.783,
+      "prompt_tokens": 1742,
+      "ok": true
+    },
+    {
+      "truth": "HIT",
+      "ttft": 140.919,
+      "prompt_tokens": 1720,
+      "ok": true
+    },
+    {
+      "truth": "MISS",
+      "ttft": 499.077,
+      "prompt_tokens": 1744,
+      "ok": true
+    },
+    {
+      "truth": "HIT",
+      "ttft": 141.724,
+      "prompt_tokens": 1725,
+      "ok": true
+    },
+    {
+      "truth": "HIT",
+      "ttft": 140.945,
+      "prompt_tokens": 1735,
+      "ok": true
+    },
+    {
+      "truth": "MISS",
+      "ttft": 491.367,
+      "prompt_tokens": 1716,
+      "ok": true
+    },
+    {
+      "truth": "MISS",
+      "ttft": 498.402,
+      "prompt_tokens": 1736,
+      "ok": true
+    },
+    {
+      "truth": "MISS",
+      "ttft": 498.016,
+      "prompt_tokens": 1737,
+      "ok": true
+    },
+    {
+      "truth": "HIT",
+      "ttft": 143.949,
+      "prompt_tokens": 1725,
+      "ok": true
+    },
+    {
+      "truth": "HIT",
+      "ttft": 142.418,
+      "prompt_tokens": 1756,
+      "ok": true
+    },
+    {
+      "truth": "MISS",
+      "ttft": 492.636,
+      "prompt_tokens": 1725,
+      "ok": true
+    },
+    {
+      "truth": "HIT",
+      "ttft": 144.22,
+      "prompt_tokens": 1693,
+      "ok": true
+    },
+    {
+      "truth": "MISS",
+      "ttft": 499.144,
+      "prompt_tokens": 1741,
+      "ok": true
+    },
+    {
+      "truth": "HIT",
+      "ttft": 143.238,
+      "prompt_tokens": 1743,
+      "ok": true
+    },
+    {
+      "truth": "HIT",
+      "ttft": 143.128,
+      "prompt_tokens": 1727,
+      "ok": true
+    },
+    {
+      "truth": "HIT",
+      "ttft": 142.458,
+      "prompt_tokens": 1743,
+      "ok": true
+    },
+    {
+      "truth": "MISS",
+      "ttft": 500.184,
+      "prompt_tokens": 1734,
+      "ok": true
+    }
+  ],
+  "n_scored": 30,
+  "accuracy": 1.0,
+  "confusion_matrix": {
+    "TP": 15,
+    "FP": 0,
+    "TN": 15,
+    "FN": 0
+  }
+}

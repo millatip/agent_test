@@ -1,0 +1,495 @@
+{
+  "evaluated": true,
+  "tau_used": 522.55935,
+  "n_turns": 10,
+  "turn_reports": [
+    {
+      "turn": 1,
+      "message_count_after_turn": 3,
+      "depth_probes": [
+        {
+          "k": 0,
+          "ttft": 201.35,
+          "prompt_tokens": 214,
+          "ok": true,
+          "classification": "HIT"
+        }
+      ],
+      "deepest_tested_k": 0,
+      "deepest_hit_k": 0,
+      "perfect_reconstruction": true,
+      "detection_accuracy": 1.0
+    },
+    {
+      "turn": 2,
+      "message_count_after_turn": 5,
+      "depth_probes": [
+        {
+          "k": 0,
+          "ttft": 193.853,
+          "prompt_tokens": 214,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 1,
+          "ttft": 243.933,
+          "prompt_tokens": 338,
+          "ok": true,
+          "classification": "HIT"
+        }
+      ],
+      "deepest_tested_k": 1,
+      "deepest_hit_k": 1,
+      "perfect_reconstruction": true,
+      "detection_accuracy": 1.0
+    },
+    {
+      "turn": 3,
+      "message_count_after_turn": 7,
+      "depth_probes": [
+        {
+          "k": 0,
+          "ttft": 194.23,
+          "prompt_tokens": 214,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 1,
+          "ttft": 185.922,
+          "prompt_tokens": 338,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 2,
+          "ttft": 274.622,
+          "prompt_tokens": 466,
+          "ok": true,
+          "classification": "HIT"
+        }
+      ],
+      "deepest_tested_k": 2,
+      "deepest_hit_k": 2,
+      "perfect_reconstruction": true,
+      "detection_accuracy": 1.0
+    },
+    {
+      "turn": 4,
+      "message_count_after_turn": 9,
+      "depth_probes": [
+        {
+          "k": 0,
+          "ttft": 193.194,
+          "prompt_tokens": 214,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 1,
+          "ttft": 189.823,
+          "prompt_tokens": 338,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 2,
+          "ttft": 189.581,
+          "prompt_tokens": 466,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 3,
+          "ttft": 276.5,
+          "prompt_tokens": 601,
+          "ok": true,
+          "classification": "HIT"
+        }
+      ],
+      "deepest_tested_k": 3,
+      "deepest_hit_k": 3,
+      "perfect_reconstruction": true,
+      "detection_accuracy": 1.0
+    },
+    {
+      "turn": 5,
+      "message_count_after_turn": 11,
+      "depth_probes": [
+        {
+          "k": 0,
+          "ttft": 195.348,
+          "prompt_tokens": 214,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 1,
+          "ttft": 189.289,
+          "prompt_tokens": 338,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 2,
+          "ttft": 191.616,
+          "prompt_tokens": 466,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 3,
+          "ttft": 191.316,
+          "prompt_tokens": 601,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 4,
+          "ttft": 274.67,
+          "prompt_tokens": 727,
+          "ok": true,
+          "classification": "HIT"
+        }
+      ],
+      "deepest_tested_k": 4,
+      "deepest_hit_k": 4,
+      "perfect_reconstruction": true,
+      "detection_accuracy": 1.0
+    },
+    {
+      "turn": 6,
+      "message_count_after_turn": 15,
+      "depth_probes": [
+        {
+          "k": 0,
+          "ttft": 194.257,
+          "prompt_tokens": 214,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 1,
+          "ttft": 186.695,
+          "prompt_tokens": 338,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 2,
+          "ttft": 186.533,
+          "prompt_tokens": 466,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 3,
+          "ttft": 194.452,
+          "prompt_tokens": 601,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 4,
+          "ttft": 194.088,
+          "prompt_tokens": 727,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 5,
+          "ttft": 280.357,
+          "prompt_tokens": 849,
+          "ok": true,
+          "classification": "HIT"
+        }
+      ],
+      "deepest_tested_k": 5,
+      "deepest_hit_k": 5,
+      "perfect_reconstruction": true,
+      "detection_accuracy": 1.0
+    },
+    {
+      "turn": 7,
+      "message_count_after_turn": 19,
+      "depth_probes": [
+        {
+          "k": 0,
+          "ttft": 192.777,
+          "prompt_tokens": 214,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 1,
+          "ttft": 189.027,
+          "prompt_tokens": 338,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 2,
+          "ttft": 188.641,
+          "prompt_tokens": 466,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 3,
+          "ttft": 190.591,
+          "prompt_tokens": 601,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 4,
+          "ttft": 193.075,
+          "prompt_tokens": 727,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 5,
+          "ttft": 89.222,
+          "prompt_tokens": 849,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 6,
+          "ttft": 304.534,
+          "prompt_tokens": 1077,
+          "ok": true,
+          "classification": "HIT"
+        }
+      ],
+      "deepest_tested_k": 6,
+      "deepest_hit_k": 6,
+      "perfect_reconstruction": true,
+      "detection_accuracy": 1.0
+    },
+    {
+      "turn": 8,
+      "message_count_after_turn": 21,
+      "depth_probes": [
+        {
+          "k": 0,
+          "ttft": 193.58,
+          "prompt_tokens": 214,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 1,
+          "ttft": 194.367,
+          "prompt_tokens": 338,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 2,
+          "ttft": 190.841,
+          "prompt_tokens": 466,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 3,
+          "ttft": 188.361,
+          "prompt_tokens": 601,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 4,
+          "ttft": 197.245,
+          "prompt_tokens": 727,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 5,
+          "ttft": 89.543,
+          "prompt_tokens": 849,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 6,
+          "ttft": 196.699,
+          "prompt_tokens": 1077,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 7,
+          "ttft": 311.374,
+          "prompt_tokens": 1313,
+          "ok": true,
+          "classification": "HIT"
+        }
+      ],
+      "deepest_tested_k": 7,
+      "deepest_hit_k": 7,
+      "perfect_reconstruction": true,
+      "detection_accuracy": 1.0
+    },
+    {
+      "turn": 9,
+      "message_count_after_turn": 23,
+      "depth_probes": [
+        {
+          "k": 0,
+          "ttft": 193.914,
+          "prompt_tokens": 214,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 1,
+          "ttft": 189.01,
+          "prompt_tokens": 338,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 2,
+          "ttft": 190.4,
+          "prompt_tokens": 466,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 3,
+          "ttft": 193.463,
+          "prompt_tokens": 601,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 4,
+          "ttft": 196.996,
+          "prompt_tokens": 727,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 5,
+          "ttft": 90.48,
+          "prompt_tokens": 849,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 6,
+          "ttft": 197.257,
+          "prompt_tokens": 1077,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 7,
+          "ttft": 92.462,
+          "prompt_tokens": 1313,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 8,
+          "ttft": 268.579,
+          "prompt_tokens": 1439,
+          "ok": true,
+          "classification": "HIT"
+        }
+      ],
+      "deepest_tested_k": 8,
+      "deepest_hit_k": 8,
+      "perfect_reconstruction": true,
+      "detection_accuracy": 1.0
+    },
+    {
+      "turn": 10,
+      "message_count_after_turn": 25,
+      "depth_probes": [
+        {
+          "k": 0,
+          "ttft": 194.192,
+          "prompt_tokens": 214,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 1,
+          "ttft": 191.658,
+          "prompt_tokens": 338,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 2,
+          "ttft": 190.524,
+          "prompt_tokens": 466,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 3,
+          "ttft": 196.482,
+          "prompt_tokens": 601,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 4,
+          "ttft": 193.422,
+          "prompt_tokens": 727,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 5,
+          "ttft": 89.85,
+          "prompt_tokens": 849,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 6,
+          "ttft": 195.004,
+          "prompt_tokens": 1077,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 7,
+          "ttft": 93.666,
+          "prompt_tokens": 1313,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 8,
+          "ttft": 201.199,
+          "prompt_tokens": 1439,
+          "ok": true,
+          "classification": "HIT"
+        },
+        {
+          "k": 9,
+          "ttft": 273.881,
+          "prompt_tokens": 1565,
+          "ok": true,
+          "classification": "HIT"
+        }
+      ],
+      "deepest_tested_k": 9,
+      "deepest_hit_k": 9,
+      "perfect_reconstruction": true,
+      "detection_accuracy": 1.0
+    }
+  ],
+  "overall_detection_accuracy": 1.0,
+  "turns_with_perfect_reconstruction": 10,
+  "turn_count_growth_pattern_reconstructable": true
+}

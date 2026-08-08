@@ -1,0 +1,7 @@
+{"timestamp": "2026-07-22T05:34:57.691270+00:00", "probe_type": "known_exact", "ttft_ms": 223.85, "prompt_char_length": 942, "prompt_tokens": 214, "elapsed_run_seconds": 0.23}
+{"timestamp": "2026-07-22T05:34:58.960201+00:00", "probe_type": "cold_baseline", "ttft_ms": 264.53, "prompt_char_length": 942, "prompt_tokens": 162, "elapsed_run_seconds": 1.49}
+{"timestamp": "2026-07-22T05:35:00.287795+00:00", "probe_type": "near_miss_control", "ttft_ms": 310.2, "prompt_char_length": 943, "prompt_tokens": 214, "elapsed_run_seconds": 2.82}
+{"timestamp": "2026-07-22T05:35:01.523235+00:00", "probe_type": "known_exact", "ttft_ms": 228.65, "prompt_char_length": 942, "prompt_tokens": 214, "elapsed_run_seconds": 4.06}
+{"timestamp": "2026-07-22T05:35:02.791964+00:00", "probe_type": "cold_baseline", "ttft_ms": 266.29, "prompt_char_length": 942, "prompt_tokens": 156, "elapsed_run_seconds": 5.33}
+{"timestamp": "2026-07-22T05:35:03.985349+00:00", "probe_type": "near_miss_control", "ttft_ms": 191.46, "prompt_char_length": 943, "prompt_tokens": 214, "elapsed_run_seconds": 6.52}
+{"timestamp": "2026-07-22T05:35:05.182407+00:00", "probe_type": "known_exact", "ttft_ms": 195.29, "prompt_char_length": 942, "prompt_tokens": 214, "elapsed_run_seconds": 7.72}
