@@ -1,6 +1,8 @@
 *.pcap
 *.bin
 venv/
+venv_*/
 __pycache__/
 *.pyc
 config.json
+.env
