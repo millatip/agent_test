@@ -1,0 +1,31 @@
+{
+  "honored": true,
+  "different_salts": {
+    "first": {
+      "ttft": 484.3,
+      "prompt_tokens": 1722,
+      "ok": true,
+      "cache_salt": "verify1-2308547830a24d00acc55d64662b418e"
+    },
+    "second": {
+      "ttft": 486.858,
+      "prompt_tokens": 1722,
+      "ok": true,
+      "cache_salt": "verify2-c219c80825cf4f938fa6bed0a2ec35d2"
+    }
+  },
+  "same_salt_twice": {
+    "first": {
+      "ttft": 500.291,
+      "prompt_tokens": 1763,
+      "ok": true,
+      "cache_salt": "verify3-2de7150e4a684734a889c159e646f2b2"
+    },
+    "second": {
+      "ttft": 145.462,
+      "prompt_tokens": 1763,
+      "ok": true,
+      "cache_salt": "verify3-2de7150e4a684734a889c159e646f2b2"
+    }
+  }
+}

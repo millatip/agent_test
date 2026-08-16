@@ -1,0 +1,69 @@
+{
+  "hit_probes": [
+    {
+      "ttft": 144.36,
+      "prompt_tokens": 1734,
+      "ok": true,
+      "cache_salt": null
+    },
+    {
+      "ttft": 143.967,
+      "prompt_tokens": 1734,
+      "ok": true,
+      "cache_salt": null
+    },
+    {
+      "ttft": 142.798,
+      "prompt_tokens": 1734,
+      "ok": true,
+      "cache_salt": null
+    },
+    {
+      "ttft": 144.466,
+      "prompt_tokens": 1734,
+      "ok": true,
+      "cache_salt": null
+    },
+    {
+      "ttft": 142.986,
+      "prompt_tokens": 1734,
+      "ok": true,
+      "cache_salt": null
+    }
+  ],
+  "miss_probes": [
+    {
+      "ttft": 489.603,
+      "prompt_tokens": 1737,
+      "ok": true,
+      "cache_salt": null
+    },
+    {
+      "ttft": 499.391,
+      "prompt_tokens": 1730,
+      "ok": true,
+      "cache_salt": null
+    },
+    {
+      "ttft": 496.142,
+      "prompt_tokens": 1745,
+      "ok": true,
+      "cache_salt": null
+    },
+    {
+      "ttft": 492.69,
+      "prompt_tokens": 1733,
+      "ok": true,
+      "cache_salt": null
+    },
+    {
+      "ttft": 492.068,
+      "prompt_tokens": 1736,
+      "ok": true,
+      "cache_salt": null
+    }
+  ],
+  "hit_mean_ttft": 143.71540000000002,
+  "miss_mean_ttft": 493.9788,
+  "tau": 318.8471
+}

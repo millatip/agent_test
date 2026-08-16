@@ -1,0 +1,22 @@
+Preserved 2026-08-16 before stopping the disaggregated deployment for the
+cache_salt_defense experiment. Restored afterward using these exact commands
+(new instance IDs, same config -- see run_metadata.json for confirmation
+prefill re-registered in etcd and UCX_TLS matched the original disagg_tcp
+config on restart).
+
+frontend:
+python3 -m dynamo.frontend --http-host 0.0.0.0 --http-port 8000 --model-name /home/s3lab-spark/LG2026/models/Qwen3-8B-unsloth-bnb-4bit --discovery-backend etcd --request-plane tcp
+
+prefill worker, env UCX_TLS=tcp,cuda_copy,cuda_ipc UCX_NET_DEVICES=enp1s0f0np0 UCX_LOG_LEVEL=info:
+python3 -m dynamo.vllm --model /home/s3lab-spark/LG2026/models/Qwen3-8B-unsloth-bnb-4bit --tensor-parallel-size 1 --gpu-memory-utilization 0.4 --disaggregation-mode prefill --kv-transfer-config {"kv_connector":"NixlConnector","kv_role":"kv_both"} --discovery-backend etcd --request-plane tcp
+
+decode worker: registered in etcd at 192.168.200.13:41319 (spark-4f80), instance_id
+694d9f8399e5589a throughout -- never touched/restarted by this experiment.
+
+Reason originally stopped: ai-dynamo 1.2.1 frontend rejects requests containing
+`cache_salt` with 400 "Unsupported parameter(s): cache_salt" (string traced to
+dynamo/_core.abi3.so), even though vLLM 0.25.1 itself and dynamo's own
+vllm_processor.py both support/forward it. Deployment was idle (13 total
+requests logged since Aug 6) -- stopped to free GPU memory for a native flat
+vllm serve instance needed to actually exercise cache_salt, then restored
+afterward per user's confirmation.

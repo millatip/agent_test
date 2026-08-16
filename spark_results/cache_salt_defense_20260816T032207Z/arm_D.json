@@ -1,0 +1,153 @@
+{
+  "arm": "D",
+  "victim_salted": true,
+  "attacker_salted": false,
+  "flooded": false,
+  "trials": [
+    {
+      "trial": 0,
+      "victim_salt": "victim-d709d4de227f4e6687d9be7320fc196b",
+      "attacker_salt": null,
+      "cold": {
+        "ttft": 506.869,
+        "prompt_tokens": 1767,
+        "ok": true,
+        "cache_salt": "victim-d709d4de227f4e6687d9be7320fc196b"
+      },
+      "rewarm": {
+        "ttft": 146.648,
+        "prompt_tokens": 1767,
+        "ok": true,
+        "cache_salt": "victim-d709d4de227f4e6687d9be7320fc196b"
+      },
+      "self_hit_ok": true,
+      "flood": null,
+      "post": {
+        "ttft": 147.64,
+        "prompt_tokens": 1767,
+        "ok": true,
+        "cache_salt": "victim-d709d4de227f4e6687d9be7320fc196b"
+      },
+      "post_classification": "HIT",
+      "delta_ttft_ms": 0.9919999999999902
+    },
+    {
+      "trial": 1,
+      "victim_salt": "victim-fd1b76ff827245318327d27c02852e4e",
+      "attacker_salt": null,
+      "cold": {
+        "ttft": 499.125,
+        "prompt_tokens": 1748,
+        "ok": true,
+        "cache_salt": "victim-fd1b76ff827245318327d27c02852e4e"
+      },
+      "rewarm": {
+        "ttft": 147.931,
+        "prompt_tokens": 1748,
+        "ok": true,
+        "cache_salt": "victim-fd1b76ff827245318327d27c02852e4e"
+      },
+      "self_hit_ok": true,
+      "flood": null,
+      "post": {
+        "ttft": 144.461,
+        "prompt_tokens": 1748,
+        "ok": true,
+        "cache_salt": "victim-fd1b76ff827245318327d27c02852e4e"
+      },
+      "post_classification": "HIT",
+      "delta_ttft_ms": -3.469999999999999
+    },
+    {
+      "trial": 2,
+      "victim_salt": "victim-5064070352f14019ac1c700002cb4c98",
+      "attacker_salt": null,
+      "cold": {
+        "ttft": 494.617,
+        "prompt_tokens": 1726,
+        "ok": true,
+        "cache_salt": "victim-5064070352f14019ac1c700002cb4c98"
+      },
+      "rewarm": {
+        "ttft": 146.124,
+        "prompt_tokens": 1726,
+        "ok": true,
+        "cache_salt": "victim-5064070352f14019ac1c700002cb4c98"
+      },
+      "self_hit_ok": true,
+      "flood": null,
+      "post": {
+        "ttft": 147.28,
+        "prompt_tokens": 1726,
+        "ok": true,
+        "cache_salt": "victim-5064070352f14019ac1c700002cb4c98"
+      },
+      "post_classification": "HIT",
+      "delta_ttft_ms": 1.156000000000006
+    },
+    {
+      "trial": 3,
+      "victim_salt": "victim-e03482e6f42e42bd9b6c3f9626df22ad",
+      "attacker_salt": null,
+      "cold": {
+        "ttft": 490.16,
+        "prompt_tokens": 1712,
+        "ok": true,
+        "cache_salt": "victim-e03482e6f42e42bd9b6c3f9626df22ad"
+      },
+      "rewarm": {
+        "ttft": 146.639,
+        "prompt_tokens": 1712,
+        "ok": true,
+        "cache_salt": "victim-e03482e6f42e42bd9b6c3f9626df22ad"
+      },
+      "self_hit_ok": true,
+      "flood": null,
+      "post": {
+        "ttft": 148.141,
+        "prompt_tokens": 1712,
+        "ok": true,
+        "cache_salt": "victim-e03482e6f42e42bd9b6c3f9626df22ad"
+      },
+      "post_classification": "HIT",
+      "delta_ttft_ms": 1.5019999999999811
+    },
+    {
+      "trial": 4,
+      "victim_salt": "victim-44b74007a78d447f9b7745b631717959",
+      "attacker_salt": null,
+      "cold": {
+        "ttft": 492.419,
+        "prompt_tokens": 1723,
+        "ok": true,
+        "cache_salt": "victim-44b74007a78d447f9b7745b631717959"
+      },
+      "rewarm": {
+        "ttft": 147.841,
+        "prompt_tokens": 1723,
+        "ok": true,
+        "cache_salt": "victim-44b74007a78d447f9b7745b631717959"
+      },
+      "self_hit_ok": true,
+      "flood": null,
+      "post": {
+        "ttft": 146.859,
+        "prompt_tokens": 1723,
+        "ok": true,
+        "cache_salt": "victim-44b74007a78d447f9b7745b631717959"
+      },
+      "post_classification": "HIT",
+      "delta_ttft_ms": -0.9819999999999993
+    }
+  ],
+  "deltas_ms": [
+    0.9919999999999902,
+    -3.469999999999999,
+    1.156000000000006,
+    1.5019999999999811,
+    -0.9819999999999993
+  ],
+  "mean_delta_ms": -0.16040000000000418,
+  "stdev_delta_ms": 2.0888386246907586,
+  "self_hit_all_ok": true
+}

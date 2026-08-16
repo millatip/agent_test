@@ -1,0 +1,188 @@
+{
+  "arm": "A",
+  "victim_salted": false,
+  "attacker_salted": false,
+  "flooded": true,
+  "trials": [
+    {
+      "trial": 0,
+      "victim_salt": null,
+      "attacker_salt": null,
+      "cold": {
+        "ttft": 496.683,
+        "prompt_tokens": 1734,
+        "ok": true,
+        "cache_salt": null
+      },
+      "rewarm": {
+        "ttft": 146.859,
+        "prompt_tokens": 1734,
+        "ok": true,
+        "cache_salt": null
+      },
+      "self_hit_ok": true,
+      "flood": {
+        "target_tokens": 371100,
+        "actual_tokens": 372428,
+        "request_count": 215,
+        "requests_ok": 215,
+        "capped_before_target": false,
+        "flood_salt": null
+      },
+      "post": {
+        "ttft": 497.332,
+        "prompt_tokens": 1734,
+        "ok": true,
+        "cache_salt": null
+      },
+      "post_classification": "MISS",
+      "delta_ttft_ms": 350.47299999999996
+    },
+    {
+      "trial": 1,
+      "victim_salt": null,
+      "attacker_salt": null,
+      "cold": {
+        "ttft": 487.925,
+        "prompt_tokens": 1728,
+        "ok": true,
+        "cache_salt": null
+      },
+      "rewarm": {
+        "ttft": 145.054,
+        "prompt_tokens": 1728,
+        "ok": true,
+        "cache_salt": null
+      },
+      "self_hit_ok": true,
+      "flood": {
+        "target_tokens": 371100,
+        "actual_tokens": 371344,
+        "request_count": 214,
+        "requests_ok": 214,
+        "capped_before_target": false,
+        "flood_salt": null
+      },
+      "post": {
+        "ttft": 493.331,
+        "prompt_tokens": 1728,
+        "ok": true,
+        "cache_salt": null
+      },
+      "post_classification": "MISS",
+      "delta_ttft_ms": 348.27700000000004
+    },
+    {
+      "trial": 2,
+      "victim_salt": null,
+      "attacker_salt": null,
+      "cold": {
+        "ttft": 497.812,
+        "prompt_tokens": 1742,
+        "ok": true,
+        "cache_salt": null
+      },
+      "rewarm": {
+        "ttft": 147.052,
+        "prompt_tokens": 1742,
+        "ok": true,
+        "cache_salt": null
+      },
+      "self_hit_ok": true,
+      "flood": {
+        "target_tokens": 371100,
+        "actual_tokens": 371145,
+        "request_count": 214,
+        "requests_ok": 214,
+        "capped_before_target": false,
+        "flood_salt": null
+      },
+      "post": {
+        "ttft": 496.275,
+        "prompt_tokens": 1742,
+        "ok": true,
+        "cache_salt": null
+      },
+      "post_classification": "MISS",
+      "delta_ttft_ms": 349.22299999999996
+    },
+    {
+      "trial": 3,
+      "victim_salt": null,
+      "attacker_salt": null,
+      "cold": {
+        "ttft": 500.64,
+        "prompt_tokens": 1754,
+        "ok": true,
+        "cache_salt": null
+      },
+      "rewarm": {
+        "ttft": 148.233,
+        "prompt_tokens": 1754,
+        "ok": true,
+        "cache_salt": null
+      },
+      "self_hit_ok": true,
+      "flood": {
+        "target_tokens": 371100,
+        "actual_tokens": 371342,
+        "request_count": 214,
+        "requests_ok": 214,
+        "capped_before_target": false,
+        "flood_salt": null
+      },
+      "post": {
+        "ttft": 505.117,
+        "prompt_tokens": 1754,
+        "ok": true,
+        "cache_salt": null
+      },
+      "post_classification": "MISS",
+      "delta_ttft_ms": 356.884
+    },
+    {
+      "trial": 4,
+      "victim_salt": null,
+      "attacker_salt": null,
+      "cold": {
+        "ttft": 505.076,
+        "prompt_tokens": 1749,
+        "ok": true,
+        "cache_salt": null
+      },
+      "rewarm": {
+        "ttft": 147.664,
+        "prompt_tokens": 1749,
+        "ok": true,
+        "cache_salt": null
+      },
+      "self_hit_ok": true,
+      "flood": {
+        "target_tokens": 371100,
+        "actual_tokens": 372704,
+        "request_count": 215,
+        "requests_ok": 215,
+        "capped_before_target": false,
+        "flood_salt": null
+      },
+      "post": {
+        "ttft": 498.796,
+        "prompt_tokens": 1749,
+        "ok": true,
+        "cache_salt": null
+      },
+      "post_classification": "MISS",
+      "delta_ttft_ms": 351.132
+    }
+  ],
+  "deltas_ms": [
+    350.47299999999996,
+    348.27700000000004,
+    349.22299999999996,
+    356.884,
+    351.132
+  ],
+  "mean_delta_ms": 351.1978,
+  "stdev_delta_ms": 3.365020163386846,
+  "self_hit_all_ok": true
+}
