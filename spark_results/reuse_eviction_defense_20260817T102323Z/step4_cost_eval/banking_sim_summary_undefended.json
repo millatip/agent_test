@@ -1,0 +1,23 @@
+{
+  "label": "undefended",
+  "base_url": "http://localhost:8000/v1",
+  "num_sessions": 12,
+  "concurrency": 4,
+  "n_requests_logged": 48,
+  "mean_latency_ms": 12967.87625,
+  "stdev_latency_ms": 40.32785730732541,
+  "median_latency_ms": 12986.595000000001,
+  "mean_prompt_tokens": 719.4375,
+  "server_side_prefix_cache_hit_rate": 0.9368430197202676,
+  "server_side_delta_queries": 34533.0,
+  "server_side_delta_hits": 32352.0,
+  "cache_metrics_before": {
+    "queries_total": 0.0,
+    "hits_total": 0.0
+  },
+  "cache_metrics_after": {
+    "queries_total": 34533.0,
+    "hits_total": 32352.0
+  },
+  "note": "mean_latency_ms is banking_sim's own full per-turn completion latency (max_tokens capped, non-streaming), not pure TTFT."
+}

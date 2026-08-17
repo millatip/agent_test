@@ -1,0 +1,87 @@
+{
+  "serving_mode": "flat_kvdefense",
+  "timestamp_utc": "2026-08-17T10:22:57.367917+00:00",
+  "endpoint": "http://localhost:8000/v1",
+  "model": "/home/s3lab-spark/LG2026/models/Qwen3-8B-unsloth-bnb-4bit",
+  "vllm_version": "0.25.1",
+  "gpu_memory_utilization": 0.4,
+  "worker_log_path": "/tmp/flat_kvdefense_vllm_20260817T095409Z.log",
+  "capacity_tokens": 298880,
+  "worker_pids_found": [],
+  "ucx_env_by_pid": {},
+  "nvidia_smi_start": [
+    {
+      "pid": "3767229",
+      "process_name": "python3",
+      "used_gpu_memory [MiB]": "218 MiB"
+    },
+    {
+      "pid": "3767590",
+      "process_name": "sglang::scheduler",
+      "used_gpu_memory [MiB]": "12291 MiB"
+    },
+    {
+      "pid": "730376",
+      "process_name": "python3",
+      "used_gpu_memory [MiB]": "218 MiB"
+    },
+    {
+      "pid": "730710",
+      "process_name": "sglang::scheduler",
+      "used_gpu_memory [MiB]": "11421 MiB"
+    },
+    {
+      "pid": "2111369",
+      "process_name": "VLLM::EngineCore",
+      "used_gpu_memory [MiB]": "51386 MiB"
+    }
+  ],
+  "nvidia_smi_end": [
+    {
+      "pid": "3767229",
+      "process_name": "python3",
+      "used_gpu_memory [MiB]": "218 MiB"
+    },
+    {
+      "pid": "3767590",
+      "process_name": "sglang::scheduler",
+      "used_gpu_memory [MiB]": "12291 MiB"
+    },
+    {
+      "pid": "730376",
+      "process_name": "python3",
+      "used_gpu_memory [MiB]": "218 MiB"
+    },
+    {
+      "pid": "730710",
+      "process_name": "sglang::scheduler",
+      "used_gpu_memory [MiB]": "11421 MiB"
+    },
+    {
+      "pid": "2111369",
+      "process_name": "VLLM::EngineCore",
+      "used_gpu_memory [MiB]": "51386 MiB"
+    }
+  ],
+  "config": {
+    "base_url": "http://localhost:8000/v1",
+    "model": "/home/s3lab-spark/LG2026/models/Qwen3-8B-unsloth-bnb-4bit",
+    "api_key": "EMPTY",
+    "request_timeout": 60.0,
+    "serving_mode": "flat_kvdefense",
+    "worker_log_path": "/tmp/flat_kvdefense_vllm_20260817T095409Z.log",
+    "gpu_memory_utilization": 0.4,
+    "capacity_tokens": 298880,
+    "flood_fraction_of_capacity": 1.25,
+    "flood_target_tokens_per_prompt": 2000,
+    "flood_progress_every": 25,
+    "max_flood_requests_safety_cap": 5000,
+    "anchor_target_tokens": 2000,
+    "calib_n_hit": 5,
+    "calib_n_miss": 5,
+    "n_trials": 5,
+    "words_per_token_estimate": 0.75,
+    "output_root": "results"
+  },
+  "tau_ms": 314.5342
+}

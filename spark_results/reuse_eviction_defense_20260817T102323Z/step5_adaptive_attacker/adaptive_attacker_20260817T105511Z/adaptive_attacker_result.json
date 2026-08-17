@@ -1,0 +1,115 @@
+{
+  "reads_per_prompt": 2,
+  "trials": [
+    {
+      "trial": 0,
+      "cold": {
+        "ttft": 494.253,
+        "prompt_tokens": 1742,
+        "ok": true,
+        "cache_salt": null
+      },
+      "rewarm": {
+        "ttft": 144.382,
+        "prompt_tokens": 1742,
+        "ok": true,
+        "cache_salt": null
+      },
+      "self_hit_ok": true,
+      "flood": {
+        "target_tokens": 373600,
+        "actual_tokens": 374738,
+        "unique_prompts_sent": 216,
+        "reads_per_prompt": 2,
+        "total_request_count": 432,
+        "requests_ok": 432,
+        "capped_before_target": false
+      },
+      "post": {
+        "ttft": 491.864,
+        "prompt_tokens": 1742,
+        "ok": true,
+        "cache_salt": null
+      },
+      "post_classification": "MISS",
+      "delta_ttft_ms": 347.48199999999997
+    },
+    {
+      "trial": 1,
+      "cold": {
+        "ttft": 491.747,
+        "prompt_tokens": 1730,
+        "ok": true,
+        "cache_salt": null
+      },
+      "rewarm": {
+        "ttft": 143.311,
+        "prompt_tokens": 1730,
+        "ok": true,
+        "cache_salt": null
+      },
+      "self_hit_ok": true,
+      "flood": {
+        "target_tokens": 373600,
+        "actual_tokens": 374171,
+        "unique_prompts_sent": 216,
+        "reads_per_prompt": 2,
+        "total_request_count": 432,
+        "requests_ok": 432,
+        "capped_before_target": false
+      },
+      "post": {
+        "ttft": 491.775,
+        "prompt_tokens": 1730,
+        "ok": true,
+        "cache_salt": null
+      },
+      "post_classification": "MISS",
+      "delta_ttft_ms": 348.46399999999994
+    },
+    {
+      "trial": 2,
+      "cold": {
+        "ttft": 483.002,
+        "prompt_tokens": 1710,
+        "ok": true,
+        "cache_salt": null
+      },
+      "rewarm": {
+        "ttft": 143.681,
+        "prompt_tokens": 1710,
+        "ok": true,
+        "cache_salt": null
+      },
+      "self_hit_ok": true,
+      "flood": {
+        "target_tokens": 373600,
+        "actual_tokens": 374555,
+        "unique_prompts_sent": 216,
+        "reads_per_prompt": 2,
+        "total_request_count": 432,
+        "requests_ok": 432,
+        "capped_before_target": false
+      },
+      "post": {
+        "ttft": 483.016,
+        "prompt_tokens": 1710,
+        "ok": true,
+        "cache_salt": null
+      },
+      "post_classification": "MISS",
+      "delta_ttft_ms": 339.33500000000004
+    }
+  ],
+  "deltas_ms": [
+    347.48199999999997,
+    348.46399999999994,
+    339.33500000000004
+  ],
+  "mean_delta_ms": 345.09366666666665,
+  "stdev_delta_ms": 5.011263546585118,
+  "mean_total_requests": 432,
+  "self_hit_all_ok": true,
+  "baseline_requests_for_same_target": 216,
+  "cost_multiplier_vs_naive_flood": 2.0
+}

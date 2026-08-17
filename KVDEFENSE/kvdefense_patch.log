@@ -1,0 +1,10 @@
+[KVDEFENSE 2026-08-17 18:54:12] patched BlockPool.__init__/touch/free_blocks/get_new_blocks/evict_blocks -- segmented (probation/protected) eviction ACTIVE
+[KVDEFENSE 2026-08-17 18:54:16] patched BlockPool.__init__/touch/free_blocks/get_new_blocks/evict_blocks -- segmented (probation/protected) eviction ACTIVE
+[KVDEFENSE 2026-08-17 18:54:16] patched BlockPool.__init__/touch/free_blocks/get_new_blocks/evict_blocks -- segmented (probation/protected) eviction ACTIVE
+[KVDEFENSE 2026-08-17 18:54:18] patched BlockPool.__init__/touch/free_blocks/get_new_blocks/evict_blocks -- segmented (probation/protected) eviction ACTIVE
+[KVDEFENSE 2026-08-17 18:54:18] patched BlockPool.__init__/touch/free_blocks/get_new_blocks/evict_blocks -- segmented (probation/protected) eviction ACTIVE
+[KVDEFENSE 2026-08-17 18:54:22] patched BlockPool.__init__/touch/free_blocks/get_new_blocks/evict_blocks -- segmented (probation/protected) eviction ACTIVE
+[KVDEFENSE 2026-08-17 18:54:22] patched BlockPool.__init__/touch/free_blocks/get_new_blocks/evict_blocks -- segmented (probation/protected) eviction ACTIVE
+[KVDEFENSE 2026-08-17 18:54:23] patched BlockPool.__init__/touch/free_blocks/get_new_blocks/evict_blocks -- segmented (probation/protected) eviction ACTIVE
+[KVDEFENSE 2026-08-17 18:54:23] patched BlockPool.__init__/touch/free_blocks/get_new_blocks/evict_blocks -- segmented (probation/protected) eviction ACTIVE
+[KVDEFENSE 2026-08-17 18:55:27] BlockPool initialized with segmented eviction active (num_gpu_blocks=18680)
